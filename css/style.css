@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+
+
+body {
+
+    margin: 0;
+    font-family: 'Lora', serif;
+    /* background-image: url(/image/background2.jpg); */
+    background-color: #082032;
+  
+    
+}
+
+.profile {
+    width: 150px;
+
+
+}
+
+.navbar {
+    background-color: #35858ba8;
+}
+
+.h3 {
+    font-size: 40px;
+}
+
+.navbar .nav-link {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    /* padding-left: 240px; */
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.navbar .nav-link:hover {
+    color: rgba(2, 6, 243, 0.89);
+
+
+
+
+}
+
+.full {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.text-home{
+    padding-top: 50px;
+}
+
+.link:hover {
+    color: white;
+}
+.link2:hover{
+    color: blue;
+    
+}
+.btn-brand {
+    background-color: #35858B;
+    border-color: black;
+}
+
+.btn-brand:hover {
+    background-color: rgba(15, 18, 201, 0.89);
+}
+
+/* AboutME*/
+
+.About {
+    width: 100%;
+    padding: 78px 0px;
+    display: flex;
+    flex-direction: row-reverse
+}
+
+
+
+
+
+.AboutMEimg {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.child1 {
+
+    flex-wrap: wrap;
+    flex: 2;
+    width: 100%;
+    flex-direction: row-reverse;
+
+
+}
+
+.child2 {
+
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+}
+
+/* Project */
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: space-between;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+.bg-base{
+    background-color: rgba(4, 56, 90, 0.966);
+}
+
+.imgW {
+    padding-left: 20px;
+    width: auto;
+    height: 350px;
+    display: flex;
+    flex-direction: space-evenly;
+}
+
+
+.container1{
+    background-color: rgba(2, 6, 243, 0.89);
+    border-radius: solid 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+  
+
+
+
+
+
+@media (min-width: 929px) {
+    .navbar {
+        min-height: 100vh;
+        width: 250px;
+        background-color: #35858B;
+        display: flex;
+        justify-content: start;
+
+    }
+    .navbar .nav-link {
+        font-weight: 400;
+        text-transform: uppercase;
+        color: white;
+        /* padding-left: 240px; */
+        display: flex;
+        justify-content: center;
+    }    
+
+    .navbar .nav-link:hover {
+        color: rgba(2, 6, 243, 0.89);
+    }    
+    #content-wrapper {
+        padding-left: 300px;
+    }
+
+    .btn {
+        padding: 12px 28px;
+        font-weight: 700;
+    }
+
+    .btn-brand {
+        background-color: #35858B;
+        border-color: black;
+        border-radius: 20px;
+    }
+
+    .btn-brand:hover {
+        background-color: rgba(15, 18, 201, 0.89);
+
+
+    }
+
+    .text-home{
+        padding-top: 50px;
+    }
+
+    .AboutMEimg {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .child1 {
+        flex: 2;
+        width: 100%;
+
+
+    }
+
+    .container2 {
+        border: 10px solid;
+        border-color: blue;
+        height: 100vh;
+
+    }
+
+    .card-custom .card-custom-image {
+        overflow: hidden;
+        flex: 1;
+    }
+
+    .card-custom .card-custom-image img {
+        transition: all 0.4s ease;
+        display: flex;
+        flex: 1;
+      
+    }
+
+    .card-custom:hover .card-custom-image img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: scale(1.1);
+        flex: 1;
+
+    }
+    .bg-base{
+        background-color: rgba(4, 56, 90, 0.966);
+    }
+
+    .link-custom {
+        font-weight: 700;
+        position: relative;
+    }
+
+    .link-custom::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: #35858B;
+        position: absolute;
+        left: 0;
+        top: 110%;
+        transition: all 0.4s;
+    }
+
+    .link-custom:hover::after {
+        width: 100%;
+    }
+   
+    .link2:hover{
+        color: blue;
+      
+    }
+}
